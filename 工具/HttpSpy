@@ -1,1 +1,2 @@
-loading HttpSpy
+--Borrow someone else's HttpSpy, and delete it immediately if it offends you.
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Best-HTTP-SPY-38448"))()
