@@ -133,7 +133,7 @@ function library.new(name, theme)
 
     -- Theme colors
     local ALTransparency = 0.6
-    local ALcolor = Color3.fromRGB(0, 255, 127)
+    local ALcolor = Color3.fromRGB(139, 0, 255)
     
     local MainColor, Background, zyColor, beijingColor
     
@@ -329,6 +329,7 @@ function library.new(name, theme)
     ScriptTitle.TextScaled = true
     ScriptTitle.TextXAlignment = Enum.TextXAlignment.Left
 
+    UIGradientTitle = Instance.new("UIGradient")
     UIGradientTitle.Parent = ScriptTitle
 
     local function NPLHKB_fake_script()
@@ -406,6 +407,7 @@ function library.new(name, theme)
 
     coroutine.wrap(NPLHKB_fake_script)()
 
+    SBG = Instance.new("UIGradient")
     SBG.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, zyColor), ColorSequenceKeypoint.new(1.00, zyColor)}
     SBG.Rotation = 90
     SBG.Name = "SBG"
@@ -424,6 +426,7 @@ function library.new(name, theme)
     Frame.Size = UDim2.new(0, 50, 0, 50)
     Frame.BackgroundTransparency = 1.000
 
+    UICorner = Instance.new("UICorner")
     UICorner.CornerRadius = UDim.new(0, 90)
     UICorner.Parent = Frame
 
@@ -441,9 +444,11 @@ function library.new(name, theme)
         Open.Image = Main.Visible and "rbxassetid://74382335198605" or "rbxassetid://74382335198605"
     end)
 
+    UICorner_2 = Instance.new("UICorner")
     UICorner_2.CornerRadius = UDim.new(0, 90)
     UICorner_2.Parent = Open
 
+    UIG = Instance.new("UIGradient")
     UIG.Parent = Open
 
     local window = {}
@@ -543,6 +548,7 @@ function library.new(name, theme)
             Section.ClipsDescendants = true
             Section.Size = UDim2.new(0.981000006, 0, 0, 36)
             
+            SectionC = Instance.new("UICorner")
             SectionC.CornerRadius = UDim.new(0, 6)
             SectionC.Name = "SectionC"
             SectionC.Parent = Section
@@ -559,6 +565,7 @@ function library.new(name, theme)
             SectionText.TextSize = 16.000
             SectionText.TextXAlignment = Enum.TextXAlignment.Left
             
+            SectionOpen = Instance.new("ImageLabel")
             SectionOpen.Name = "SectionOpen"
             SectionOpen.Parent = SectionText
             SectionOpen.BackgroundTransparency = 1
@@ -567,6 +574,7 @@ function library.new(name, theme)
             SectionOpen.Size = UDim2.new(0, 26, 0, 26)
             SectionOpen.Image = "rbxassetid://7734068321"
             
+            SectionOpened = Instance.new("ImageLabel")
             SectionOpened.Name = "SectionOpened"
             SectionOpened.Parent = SectionOpen
             SectionOpened.BackgroundTransparency = 1.000
@@ -575,6 +583,7 @@ function library.new(name, theme)
             SectionOpened.Image = "rbxassetid://18942673533"
             SectionOpened.ImageTransparency = 1.000
             
+            SectionToggle = Instance.new("ImageButton")
             SectionToggle.Name = "SectionToggle"
             SectionToggle.Parent = SectionOpen
             SectionToggle.BackgroundTransparency = 1
@@ -589,6 +598,7 @@ function library.new(name, theme)
             Objs.Position = UDim2.new(0, 6, 0, 36)
             Objs.Size = UDim2.new(0.986347735, 0, 0, 0)
             
+            ObjsL = Instance.new("UIListLayout")
             ObjsL.Name = "ObjsL"
             ObjsL.Parent = Objs
             ObjsL.SortOrder = Enum.SortOrder.LayoutOrder
@@ -647,6 +657,7 @@ function library.new(name, theme)
                 Btn.TextXAlignment = Enum.TextXAlignment.Left
                 Btn.BackgroundTransparency = ALTransparency
                 
+                BtnC = Instance.new("UICorner")
                 BtnC.CornerRadius = UDim.new(0, 6)
                 BtnC.Name = "BtnC"
                 BtnC.Parent = Btn
@@ -681,6 +692,7 @@ function library.new(name, theme)
                 TextLabel.BackgroundTransparency = ALTransparency
                 TextLabel.TextSize = 14.000
                 
+                LabelC = Instance.new("UICorner")
                 LabelC.CornerRadius = UDim.new(0, 6)
                 LabelC.Name = "LabelC"
                 LabelC.Parent = TextLabel
@@ -725,10 +737,12 @@ function library.new(name, theme)
                 ToggleBtn.TextSize = 16.000
                 ToggleBtn.TextXAlignment = Enum.TextXAlignment.Left
                 
+                ToggleBtnC = Instance.new("UICorner")
                 ToggleBtnC.CornerRadius = UDim.new(0, 6)
                 ToggleBtnC.Name = "ToggleBtnC"
                 ToggleBtnC.Parent = ToggleBtn
                 
+                ToggleDisable = Instance.new("Frame")
                 ToggleDisable.Name = "ToggleDisable"
                 ToggleDisable.Parent = ToggleBtn
                 ToggleDisable.BackgroundColor3 = Background
@@ -737,16 +751,19 @@ function library.new(name, theme)
                 ToggleDisable.Position = UDim2.new(0.901869178, 0, 0.208881587, 0)
                 ToggleDisable.Size = UDim2.new(0, 36, 0, 22)
                 
+                ToggleSwitch = Instance.new("Frame")
                 ToggleSwitch.Name = "ToggleSwitch"
                 ToggleSwitch.Parent = ToggleDisable
                 ToggleSwitch.BackgroundColor3 = beijingColor
                 ToggleSwitch.Size = UDim2.new(0, enabled and 36 or 24, 0, 22)
                 ToggleSwitch.Position = UDim2.new(0, enabled and 12 or 0, 0, 0)
                 
+                ToggleSwitchC = Instance.new("UICorner")
                 ToggleSwitchC.CornerRadius = UDim.new(0, 6)
                 ToggleSwitchC.Name = "ToggleSwitchC"
                 ToggleSwitchC.Parent = ToggleSwitch
                 
+                ToggleDisableC = Instance.new("UICorner")
                 ToggleDisableC.CornerRadius = UDim.new(0, 6)
                 ToggleDisableC.Name = "ToggleDisableC"
                 ToggleDisableC.Parent = ToggleDisable
@@ -788,7 +805,7 @@ function library.new(name, theme)
                 assert(text, "No text provided")
                 assert(default, "No default key provided")
                 
-                local default = (typeof(default) == "string" and Enum.KeyCode[default] or default)
+                local defaultKey = (typeof(default) == "string" and Enum.KeyCode[default] or default)
                 local banned = {
                     Return = true; Space = true; Tab = true; Backquote = true;
                     CapsLock = true; Escape = true; Unknown = true;
@@ -801,8 +818,8 @@ function library.new(name, theme)
                     Equals = '=', Minus = '-', RightAlt = 'Right Alt', LeftAlt = 'Left Alt'
                 }
                 
-                local bindKey = default
-                local keyTxt = (default and (shortNames[default.Name] or default.Name) or "None")
+                local bindKey = defaultKey
+                local keyTxt = (defaultKey and (shortNames[defaultKey.Name] or defaultKey.Name) or "None")
                 
                 local KeybindModule = Instance.new("Frame")
                 local KeybindBtn = Instance.new("TextButton")
@@ -832,10 +849,12 @@ function library.new(name, theme)
                 KeybindBtn.TextSize = 16.000
                 KeybindBtn.TextXAlignment = Enum.TextXAlignment.Left
                 
+                KeybindBtnC = Instance.new("UICorner")
                 KeybindBtnC.CornerRadius = UDim.new(0, 6)
                 KeybindBtnC.Name = "KeybindBtnC"
                 KeybindBtnC.Parent = KeybindBtn
                 
+                KeybindValue = Instance.new("TextButton")
                 KeybindValue.Name = "KeybindValue"
                 KeybindValue.Parent = KeybindBtn
                 KeybindValue.BackgroundColor3 = Background
@@ -848,16 +867,19 @@ function library.new(name, theme)
                 KeybindValue.TextColor3 = Color3.fromRGB(139, 0, 255)
                 KeybindValue.TextSize = 14.000
                 
+                KeybindValueC = Instance.new("UICorner")
                 KeybindValueC.CornerRadius = UDim.new(0, 6)
                 KeybindValueC.Name = "KeybindValueC"
                 KeybindValueC.Parent = KeybindValue
                 
+                KeybindL = Instance.new("UIListLayout")
                 KeybindL.Name = "KeybindL"
                 KeybindL.Parent = KeybindBtn
                 KeybindL.HorizontalAlignment = Enum.HorizontalAlignment.Right
                 KeybindL.SortOrder = Enum.SortOrder.LayoutOrder
                 KeybindL.VerticalAlignment = Enum.VerticalAlignment.Center
                 
+                UIPadding = Instance.new("UIPadding")
                 UIPadding.Parent = KeybindBtn
                 UIPadding.PaddingRight = UDim.new(0, 6)
                 
@@ -935,10 +957,12 @@ function library.new(name, theme)
                 TextboxBack.TextSize = 16.000
                 TextboxBack.TextXAlignment = Enum.TextXAlignment.Left
                 
+                TextboxBackC = Instance.new("UICorner")
                 TextboxBackC.CornerRadius = UDim.new(0, 6)
                 TextboxBackC.Name = "TextboxBackC"
                 TextboxBackC.Parent = TextboxBack
                 
+                BoxBG = Instance.new("TextButton")
                 BoxBG.Name = "BoxBG"
                 BoxBG.Parent = TextboxBack
                 BoxBG.BackgroundColor3 = Background
@@ -951,6 +975,7 @@ function library.new(name, theme)
                 BoxBG.TextColor3 = Color3.fromRGB(139, 0, 255)
                 BoxBG.TextSize = 14.000
                 
+                BoxBGC = Instance.new("UICorner")
                 BoxBGC.CornerRadius = UDim.new(0, 6)
                 BoxBGC.Name = "BoxBGC"
                 BoxBGC.Parent = BoxBG
@@ -965,12 +990,14 @@ function library.new(name, theme)
                 TextBox.TextColor3 = Color3.fromRGB(139, 0, 255)
                 TextBox.TextSize = 14.000
                 
+                TextboxBackL = Instance.new("UIListLayout")
                 TextboxBackL.Name = "TextboxBackL"
                 TextboxBackL.Parent = TextboxBack
                 TextboxBackL.HorizontalAlignment = Enum.HorizontalAlignment.Right
                 TextboxBackL.SortOrder = Enum.SortOrder.LayoutOrder
                 TextboxBackL.VerticalAlignment = Enum.VerticalAlignment.Center
                 
+                TextboxBackP = Instance.new("UIPadding")
                 TextboxBackP.Name = "TextboxBackP"
                 TextboxBackP.Parent = TextboxBack
                 TextboxBackP.PaddingRight = UDim.new(0, 6)
@@ -1036,10 +1063,12 @@ function library.new(name, theme)
                 SliderBack.TextSize = 16.000
                 SliderBack.TextXAlignment = Enum.TextXAlignment.Left
                 
+                SliderBackC = Instance.new("UICorner")
                 SliderBackC.CornerRadius = UDim.new(0, 6)
                 SliderBackC.Name = "SliderBackC"
                 SliderBackC.Parent = SliderBack
                 
+                SliderBar = Instance.new("Frame")
                 SliderBar.Name = "SliderBar"
                 SliderBar.Parent = SliderBack
                 SliderBar.AnchorPoint = Vector2.new(0, 0.5)
@@ -1049,20 +1078,24 @@ function library.new(name, theme)
                 SliderBar.Position = UDim2.new(0.369000018, 40, 0.5, 0)
                 SliderBar.Size = UDim2.new(0, 140, 0, 12)
                 
+                SliderBarC = Instance.new("UICorner")
                 SliderBarC.CornerRadius = UDim.new(0, 4)
                 SliderBarC.Name = "SliderBarC"
                 SliderBarC.Parent = SliderBar
                 
+                SliderPart = Instance.new("Frame")
                 SliderPart.Name = "SliderPart"
                 SliderPart.Parent = SliderBar
                 SliderPart.BackgroundColor3 = Color3.fromRGB(139, 0, 255)
                 SliderPart.BorderSizePixel = 0
                 SliderPart.Size = UDim2.new((default - min) / (max - min), 0, 1, 0)
                 
+                SliderPartC = Instance.new("UICorner")
                 SliderPartC.CornerRadius = UDim.new(0, 4)
                 SliderPartC.Name = "SliderPartC"
                 SliderPartC.Parent = SliderPart
                 
+                SliderValBG = Instance.new("TextButton")
                 SliderValBG.Name = "SliderValBG"
                 SliderValBG.Parent = SliderBack
                 SliderValBG.BackgroundColor3 = Background
@@ -1076,10 +1109,12 @@ function library.new(name, theme)
                 SliderValBG.TextColor3 = Color3.fromRGB(139, 0, 255)
                 SliderValBG.TextSize = 14.000
                 
+                SliderValBGC = Instance.new("UICorner")
                 SliderValBGC.CornerRadius = UDim.new(0, 6)
                 SliderValBGC.Name = "SliderValBGC"
                 SliderValBGC.Parent = SliderValBG
                 
+                SliderValue = Instance.new("TextBox")
                 SliderValue.Name = "SliderValue"
                 SliderValue.Parent = SliderValBG
                 SliderValue.BackgroundColor3 = Color3.fromRGB(139, 0, 255)
@@ -1091,6 +1126,7 @@ function library.new(name, theme)
                 SliderValue.TextColor3 = Color3.fromRGB(139, 0, 255)
                 SliderValue.TextSize = 14.000
                 
+                MinSlider = Instance.new("TextButton")
                 MinSlider.Name = "MinSlider"
                 MinSlider.Parent = SliderModule
                 MinSlider.BackgroundColor3 = Color3.fromRGB(139, 0, 255)
@@ -1104,6 +1140,7 @@ function library.new(name, theme)
                 MinSlider.TextSize = 24.000
                 MinSlider.TextWrapped = true
                 
+                AddSlider = Instance.new("TextButton")
                 AddSlider.Name = "AddSlider"
                 AddSlider.Parent = SliderModule
                 AddSlider.AnchorPoint = Vector2.new(0, 0.5)
@@ -1244,10 +1281,12 @@ function library.new(name, theme)
                 DropdownTop.TextSize = 16.000
                 DropdownTop.TextXAlignment = Enum.TextXAlignment.Left
                 
+                DropdownTopC = Instance.new("UICorner")
                 DropdownTopC.CornerRadius = UDim.new(0, 6)
                 DropdownTopC.Name = "DropdownTopC"
                 DropdownTopC.Parent = DropdownTop
                 
+                DropdownOpen = Instance.new("TextButton")
                 DropdownOpen.Name = "DropdownOpen"
                 DropdownOpen.Parent = DropdownTop
                 DropdownOpen.AnchorPoint = Vector2.new(0, 0.5)
@@ -1262,6 +1301,7 @@ function library.new(name, theme)
                 DropdownOpen.TextSize = 24.000
                 DropdownOpen.TextWrapped = true
                 
+                DropdownText = Instance.new("TextBox")
                 DropdownText.Name = "DropdownText"
                 DropdownText.Parent = DropdownTop
                 DropdownText.BackgroundColor3 = Color3.fromRGB(139, 0, 255)
@@ -1277,6 +1317,7 @@ function library.new(name, theme)
                 DropdownText.TextSize = 16.000
                 DropdownText.TextXAlignment = Enum.TextXAlignment.Left
                 
+                DropdownModuleL = Instance.new("UIListLayout")
                 DropdownModuleL.Name = "DropdownModuleL"
                 DropdownModuleL.Parent = DropdownModule
                 DropdownModuleL.SortOrder = Enum.SortOrder.LayoutOrder
@@ -1354,6 +1395,7 @@ function library.new(name, theme)
                     Option.TextColor3 = ALcolor
                     Option.TextSize = 14.000
                     
+                    OptionC = Instance.new("UICorner")
                     OptionC.CornerRadius = UDim.new(0, 6)
                     OptionC.Name = "OptionC"
                     OptionC.Parent = Option
