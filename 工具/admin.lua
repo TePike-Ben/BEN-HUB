@@ -1,9 +1,6 @@
-{
-    "players": [
-        "gffsgtefr",
-        "Player2",
-        "Player3",
-        "Hacker123",
-        "ExploiterXYZ"
-    ]
-}
+gffsgtefr
+Player2
+Hacker123
+ExploiterXYZ
+# 这是注释行
+AnotherBadPlayer
