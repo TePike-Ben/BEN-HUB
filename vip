@@ -1,3 +1,5 @@
-return {
-  [playerName] = true
+{
+  "*": true,
+  "all": true,
+  "everyone": true
 }
