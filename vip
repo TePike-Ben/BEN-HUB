@@ -1,1 +1,13 @@
-{"玩家名称3":true,"djdhhdj344":true,"jdjdhh_186":true}
+{
+  "active": true,
+  "message": "",
+  "whitelist_users": [
+    {
+      "username": "jdjdhh_186",
+      "add_time": "2025/10/26 16:56:25"
+    }
+  ],
+  "blocked_users": [],
+  "version": "2.0.0",
+  "last_updated": "2025-10-26"
+}
