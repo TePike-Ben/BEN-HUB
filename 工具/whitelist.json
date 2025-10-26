@@ -1,1 +1,13 @@
-
+{
+  "active": true,
+  "message": "",
+  "whitelist_users": [
+    {
+      "username": "666",
+      "add_time": "2025/10/26 16:52:36"
+    }
+  ],
+  "blocked_users": [],
+  "version": "2.0.0",
+  "last_updated": "2025-10-26"
+}
