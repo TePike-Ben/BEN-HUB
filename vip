@@ -1,8 +1,13 @@
 {
   "active": true,
   "message": "BEN",
-  "whitelist_users": [],
+  "whitelist_users": [
+    {
+      "username": "mjfhgg72",
+      "add_time": "2025/10/27 23:34:01"
+    }
+  ],
   "blocked_users": [],
   "version": "2.0.0",
-  "last_updated": "2025-10-26"
+  "last_updated": "2025-10-27"
 }
