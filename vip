@@ -1,12 +1,7 @@
 {
   "active": true,
   "message": "BEN",
-  "whitelist_users": [
-    {
-      "username": "sanli719",
-      "add_time": "2025/10/30 20:50:32"
-    }
-  ],
+  "whitelist_users": [],
   "blocked_users": [],
   "version": "2.0.0",
   "last_updated": "2025-10-30"
