@@ -85,9 +85,13 @@
     {
       "username": "917866644123456789",
       "add_time": "2025/11/4 22:20:55"
+    },
+    {
+      "username": "ZXCVBNM88967",
+      "add_time": "2025/11/5 20:51:35"
     }
   ],
   "blocked_users": [],
   "version": "2.0.0",
-  "last_updated": "2025-11-04"
+  "last_updated": "2025-11-05"
 }
