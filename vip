@@ -3,108 +3,12 @@
   "message": "BEN",
   "whitelist_users": [
     {
-      "username": "sanli7187",
-      "add_time": "2025/10/30 20:58:17"
-    },
-    {
-      "username": "sanli7191",
-      "add_time": "2025/10/30 21:15:25"
-    },
-    {
-      "username": "fgll588",
-      "add_time": "2025/10/30 22:35:46"
-    },
-    {
-      "username": "ishegsjshshsnb",
-      "add_time": "2025/10/31 19:47:32"
-    },
-    {
-      "username": "gggggsvdx",
-      "add_time": "2025/10/31 20:23:56"
-    },
-    {
-      "username": "jsjeidhdh4",
-      "add_time": "2025/10/31 20:24:56"
-    },
-    {
-      "username": "ejdhhdksj",
-      "add_time": "2025/10/31 20:25:54"
-    },
-    {
-      "username": "hhhefddf",
-      "add_time": "2025/11/1 08:12:56"
-    },
-    {
-      "username": "1096_3JA2",
-      "add_time": "2025/11/1 10:45:30"
-    },
-    {
-      "username": "benbenben66666nb",
-      "add_time": "2025/11/1 22:08:35"
-    },
-    {
-      "username": "66Bennb2",
-      "add_time": "2025/11/1 22:24:06"
-    },
-    {
-      "username": "1096_5JA",
-      "add_time": "2025/11/1 22:54:41"
-    },
-    {
-      "username": "sanli7177",
-      "add_time": "2025/11/2 09:58:17"
-    },
-    {
-      "username": "bjgjfse53",
-      "add_time": "2025/11/2 10:47:50"
-    },
-    {
-      "username": "sanli7178",
-      "add_time": "2025/11/4 20:51:01"
-    },
-    {
-      "username": "ABCDEFG88963",
-      "add_time": "2025/11/4 20:59:20"
-    },
-    {
-      "username": "ZXCVBNM88693",
-      "add_time": "2025/11/4 21:24:03"
-    },
-    {
-      "username": "dhwjjzhanajdhshw",
-      "add_time": "2025/11/4 21:40:50"
-    },
-    {
-      "username": "ZXCVBNM88975",
-      "add_time": "2025/11/4 21:57:58"
-    },
-    {
-      "username": "sjbsv49",
-      "add_time": "2025/11/4 22:18:26"
-    },
-    {
-      "username": "917866644123456789",
-      "add_time": "2025/11/4 22:20:55"
-    },
-    {
-      "username": "ZXCVBNM88967",
-      "add_time": "2025/11/5 20:51:35"
-    },
-    {
       "username": "lxb6666666",
       "add_time": "2025/11/5 20:53:27"
     },
     {
       "username": "haofengyyds_2",
       "add_time": "2025/11/5 20:55:26"
-    },
-    {
-      "username": "lxv6777777",
-      "add_time": "2025/11/5 20:57:09"
-    },
-    {
-      "username": "free86543",
-      "add_time": "2025/11/6 00:27:10"
     },
     {
       "username": "sani7179",
@@ -129,6 +33,10 @@
     {
       "username": "haofengyyds_3",
       "add_time": "2025/11/6 20:54:01"
+    },
+    {
+      "username": "dhwjjzhanajdhshw",
+      "add_time": "2025/11/6 21:08:54"
     }
   ],
   "blocked_users": [],
