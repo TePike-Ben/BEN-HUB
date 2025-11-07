@@ -1,5 +1,25 @@
-[
-  "DEV_505413",
-  "DEV_789012",
-  "DEV_243554"
-]
+{
+  "active": true,
+  "version": "1.0.0",
+  "last_updated": "2024-01-01",
+  "message": "欢迎使用脚本",
+  "whitelist_devices": [
+    {
+      "device_id": "1234567890abcdef",
+      "username": "3938393637363939",
+      "expiry_date": "2024-12-31"
+    },
+    {
+      "device_id": "abcdef1234567890", 
+      "username": "示例用户2",
+      "expiry_date": "2024-12-31"
+    }
+  ],
+  "blocked_devices": [
+    {
+      "device_id": "blockeddevice1234",
+      "username": "违规用户",
+      "reason": "滥用脚本"
+    }
+  ]
+}
